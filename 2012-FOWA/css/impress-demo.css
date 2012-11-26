@@ -281,6 +281,12 @@ a:focus {
     font-size: 32px;
 }
 
+
+#abouttalk, #aboutme h1 {
+    font-size: 100px;
+}
+
+
 /*
     Second step is nothing special, just a text with a link, so it doesn't need
     any special styling.
