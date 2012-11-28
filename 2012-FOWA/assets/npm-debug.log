@@ -1,0 +1,33 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'mojito' ]
+2 info using npm@1.1.63
+3 info using node@v0.8.12
+4 verbose read json /usr/local/lib/package.json
+5 verbose read json /usr/local/lib/package.json
+6 verbose cache add [ 'mojito', null ]
+7 silly cache add name=undefined spec="mojito" args=["mojito",null]
+8 verbose parsed url { pathname: 'mojito', path: 'mojito', href: 'mojito' }
+9 silly lockFile 6b793ca1-mojito mojito
+10 verbose lock mojito /Users/drg/.npm/6b793ca1-mojito.lock
+11 silly lockFile 6b793ca1-mojito mojito
+12 verbose addNamed [ 'mojito', '' ]
+13 verbose addNamed [ null, '' ]
+14 silly lockFile 624dd19f-mojito mojito@
+15 verbose lock mojito@ /Users/drg/.npm/624dd19f-mojito.lock
+16 silly lockFile 624dd19f-mojito mojito@
+17 error Error: EACCES, open '/Users/drg/.npm/624dd19f-mojito.lock'
+17 error  { [Error: EACCES, open '/Users/drg/.npm/624dd19f-mojito.lock']
+17 error   errno: 3,
+17 error   code: 'EACCES',
+17 error   path: '/Users/drg/.npm/624dd19f-mojito.lock' }
+18 error Please try running this command again as root/Administrator.
+19 error System Darwin 11.4.2
+20 error command "node" "/usr/local/bin/npm" "install" "-g" "mojito"
+21 error cwd /Users/drg/src/decks/2012-FOWA/assets
+22 error node -v v0.8.12
+23 error npm -v 1.1.63
+24 error path /Users/drg/.npm/624dd19f-mojito.lock
+25 error code EACCES
+26 error errno 3
+27 error stack Error: EACCES, open '/Users/drg/.npm/624dd19f-mojito.lock'
+28 verbose exit [ 3, true ]
