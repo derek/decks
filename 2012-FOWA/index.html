@@ -77,8 +77,6 @@
     <link rel="stylesheet" href="assets/sunburst.css">
     <script type="text/javascript" src="assets/prettify.js"></script>
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
-
     <!--
         
         Impress.js doesn't depend on any external stylesheet. Script adds all styles it needs for
@@ -205,37 +203,47 @@
         down (4 times) to make it back to it's correct size.
         
     -->
+    <div id="ydn" class="step" data-x="-5000" data-y="0" data-scale="2">
+        <img src="./assets/ydn.png" height="120">
+    </div>
     <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
         <span class="try">Building the Future of</span>
         <br />
         <p><img src="./assets/yahoo-logo.png" width="700"></p>
+        <br />
+
+        <p style="font-size:.8em; text-align:center; color:#666">Future of Web Apps 2012 - Prague</p>
     </div>
 
     <div id="aboutme" class="step" data-x="-1500" data-y="3000" data-rotate="180" data-scale="3">
         <h1>About Me</h1>
         <ul>
-            <li>Hi, I'm Derek Gathright</li>
+            <li>Howdy, I'm Derek Gathright</li>
             <li>Senior Software Engineer @ <img src="./assets/yahoo-logo.png" width="200"></li>
-            <li>Yahoo! Developer Network Evangelist</li>
+            <li><a href="http://twitter.com/derek">@derek</a> (Twitter &amp; Github)</li>
         </ul>
     </div>
 
     <div id="topic" class="step" data-x="-16500" data-y="3000" data-rotate="180" data-scale="3">
-        <p>Let's talk about web dev</p>
+        <p>Let's talk about web dev...</p>
     </div>
 
     <div id="oldschool" class="step" data-x="-21000" data-y="3000" data-rotate="180" data-scale="3">
         <h1>Old School</h1>
-        <img src="http://farm3.staticflickr.com/2355/2370811833_8727d8ebfe_b.jpg" height="500">
+        <img src="assets/oldschool.jpg" height="500">
     </div>
 
     <div id="oldschool-2" class="step" data-x="-24000" data-y="3000" data-rotate="180" data-scale="3">
-        <p>You used some server-side scripting language to talk to your database and produce an HTML document that you delivered to a browser, and maybe sprinkled some DHTML &amp; AJAX on top of.</p>
+        <p>You used some <span style="color:red;">server-side scripting language</span> to talk to your <span style="color:red;">database</span> via <span style="color:red;">SQL</span> and produce an <span style="color:red;">HTML document</span> that you deliver to a <span style="color:red;">browser</span>, and maybe sprinkle some <span style="color:red;">DHTML</span> &amp; <span style="color:red;">AJAX</span> on top.</p>
+    </div>
+
+    <div id="oldschool-3" class="step" data-x="-24000" data-y="1400" data-rotate="180" data-scale="3">
+        <p>Web pages were (mostly) static, and gave consistent experiences across <span style="font-weight:bold; font-size: 1.5em;">all</span> browsers.</p>
     </div>
 
     <div id="newschool" class="step" data-x="-30000" data-y="3000" data-rotate="0" data-scale="3">
         <h1>New School</h1>
-        <img src="http://farm4.staticflickr.com/3111/3090138658_279be57d8b_z.jpg?zz=1" height="500">
+        <img src="assets/newschool.jpg" height="500">
     </div>
 
     <div id="newschool-2" class="step" data-x="-27500" data-y="3000" data-rotate="0" data-scale="3">
@@ -246,12 +254,19 @@
             <li>Connectivity variances</li>
             <li>Interaction capabilities</li>
             <li>Concurrency</li>
+            <li>Real-time</li>
+            <li>REST(ful) API</li>
             <li>JS Modules + Loader</li>
             <li>Dependency Resolution</li>
             <li>Unit Testing</li>
             <li>Deployment + Hosting</li>
-            <li>REST(ful) API</li>
         </ul>
+    </div>
+
+    <div id="newschool-3" class="step" data-x="-27500" data-y="5500" data-rotate="0" data-scale="3">
+        <p>That's a lot of things to consider!</p>
+        <br />
+        <p>Proper web development is pretty hard these days if you aren't using tools, frameworks, libraries, and toolkits.</p>
     </div>
 
     <div id="yui" class="step" data-x="7000" data-y="0" data-rotate="0" data-scale="5">
@@ -261,6 +276,7 @@
 
     <div id="yui-2" class="step" data-x="10500" data-y="0" data-z="0" data-rotate="0" data-rotate-y="90" data-scale="5">
         <p>YUI is a JavaScript toolkit.</p>
+        <br />
         <p>Core concepts:</p>
         <ul style="margin-left:40px;">
             <li>&bull; Modular</li>
@@ -281,7 +297,7 @@
         </pre>
     </div>
 
-    <div id="yui-4" class="step" data-x="12000" data-y="2500" data-z="0" data-rotate="0" data-rotate-y="180" data-scale="5">
+    <div id="yui-4" class="step" data-x="12000" data-y="2600" data-z="0" data-rotate="0" data-rotate-y="180" data-scale="5">
         <pre style="font-size:.7em;" class="prettyprint">
 &lt;script>
     // Create a YUI sandbox on your page.
@@ -310,12 +326,12 @@
     </div>
 
     <div id="yui-6" class="step" data-x="12000" data-y="9500" data-z="0" data-rotate="0" data-rotate-y="90" data-scale="5">
-        <p>By using <span style="font-weight:bold; color:blue;">YUI</span> you get <span style="color:brown;">an asset loader</span>, <span style="color:teal;">modules w/ dependency resolution</span>, <span style="color:red;">300+ core modules</span>, <span style="color:green;">400+ "Gallery" modules</span>, <span style="color:#660033;">plus an incredibly involved community (<span style="color:red;">♥</span>!!)</span>, <span style="color:#006666;">and core team at <span style="color:purple; font-weight:bold;">Yahoo!</span> dedicated to helping your apps be awesome</span>.</p>
+        <p>By using <span style="font-weight:bold; color:blue;">YUI</span> you get <span style="color:brown;">an asset loader</span>, <span style="color:teal;">modules w/ dependency resolution</span>, <span style="color:red;">300+ core modules</span>, <span style="color:green;">400+ "Gallery" modules</span>, <span style="color:#660033;">an incredibly involved community (<span style="color:red;">♥</span>!!)</span>, <span style="color:#006666;">and core team at <span style="color:purple; font-weight:bold;">Yahoo!</span> dedicated to helping your apps be awesome</span>.</p>
         <br />
         <p style="font-weight:bold;">Woot!</p>
     </div>
 
-    <div id="yui-7" class="step" data-x="12000" data-y="12500" data-z="0" data-rotate="0" data-rotate-y="90" data-scale="5">
+    <div id="yui-7" class="step" data-x="12000" data-y="12500" data-z="0" data-rotate-y="90" data-scale="5">
         <p>So you now have a foundation to build <span style="font-weight:bold; font-size:2em">any</span> Web application possible, including...</p>
     </div>
 
@@ -324,15 +340,188 @@
     </div>
 
     <div id="yui-9" class="step" data-x="12000" data-y="18000" data-z="0" data-rotate="0" data-rotate-y="0" data-scale="5">
-        <p>Because <img style="background-color:#666; padding:10px;" height="60" src="http://feval.info/html5devconf/resources/nodejs.png"> is a <span style="font-weight:bold">first-class environment</span> for <img src="./assets/yui-logo.png" height="90">, that means it runs just as well there as it does in <img src="./assets/browser_logos-256.png" height="100"></p>
+        <p>Because <img style="position:relative; top:20px; background-color:#666; padding:10px;" height="60" src="http://feval.info/html5devconf/resources/nodejs.png"> is a <span style="font-weight:bold;">first-class environment</span> for <img style="position:relative; top:30px; " src="./assets/yui-logo.png" height="90">, that means it runs just as well there as it does in <img style="position:relative; top:40px;" src="./assets/browser_logos-256.png" height="100"></p>
     </div>
 
-    <div id="mojito" class="step" data-x="100000" data-y="3000" data-rotate="90" data-scale="5">
+    <div id="yui-10" class="step" data-x="12000" data-y="22000" data-z="0" data-rotate="0" data-rotate-y="0" data-scale="5">
+        <p>Node.js is how YUI is tested.</p> 
+        <br />
+        <p>After every build, 7,200+ unit tests are executed, per environment.</p>
+        <br />
+        <p style="font-weight:bold;">And they all pass.</p>
+    </div>
+
+    <div id="yui-11" class="step" data-x="12000" data-y="27000" data-z="0" data-rotate="90" data-rotate-y="0" data-scale="5">
+        <p>So if we have a loosely coupled JavaScript platform for servers and clients that we can build on top of, wouldn't the next step be a framework?</p>    
+    </div>
+
+    <div id="yui-12" class="step" data-x="15000" data-y="27000" data-z="0" data-rotate="90" data-rotate-y="0" data-scale="5">
+        <p style="font-size:3em;">Yes!</p>    
+    </div>
+
+    <div id="mojito" class="step" data-x="20000" data-y="2000" data-rotate="270" data-scale="5">
+        <h1>Introducing...</h1>
         <img src="./assets/mojito-logo.png" height="200">
     </div>
 
-    <div id="yql" class="step" data-x="40000" data-y="5000" data-rotate="180" data-scale="5">
-        <img src="http://l.yimg.com/a/i/us/pps/yql128.gif" height="200">
+    <div id="mojito-1" class="step" data-x="24000" data-y="3000" data-rotate-z="270" data-scale="5">
+        <p>Mojito is a JavaScript MVC framework designed to make developing mobile applications easy and efficient.</p>
+        <br />
+        <p style="background-color:white; border-radius:30px; text-align:center;"><img src="./assets/devices.jpg" height="300"></p>
+    </div>
+
+    <div id="mojito-3" class="step" data-x="30000" data-y="1000" data-rotate-z="270" data-scale="5">
+        <p>Mojito is built on top of YUI.</p>
+        <br />
+        <p>Adds...</p>
+        <ul style="list-style-type:disc; padding-left:40px;">
+            <li>Custom modules</li>
+            <li>Command line tools</li>
+            <li>Hosting environment</li>
+        </ul>
+    </div>
+
+    <div id="mojito-4" class="step" data-x="30000" data-y="1000" data-rotate-x="90" data-rotate-z="270" data-scale="5">
+        <h1>Getting Started</h1>
+        <pre style="font-size:.8em;" class="prettyprint">
+// Install mojito
+$ npm install -g mojito
+
+// Run some unit tests to insure it installed
+$ mojito test
+
+</pre>
+    </div>
+
+    <div id="mojito-5" class="step" data-x="32500" data-y="1000" data-rotate-x="90" data-rotate-z="270" data-scale="5">
+        <pre style="font-size:.8em;" class="prettyprint">
+// Create an app
+$ mojito create app hello_world
+$ cd hello_world
+
+// Create a mojit
+$ mojito create mojit myMojit
+
+</pre>
+    </div>
+
+    <div id="mojito-6" class="step" data-x="35600" data-y="1000" data-rotate-x="90" data-rotate-z="270" data-scale="5">
+        <pre style="font-size:.8em;" class="prettyprint">
+// file: mojits/myMojit/controller.server.js
+
+// Create the module
+YUI.add('myMojit', function(Y, NAME) {
+  Y.namespace('mojito.controllers')[NAME] = {
+        index: function(ac) {
+            ac.done('Hello, world!');
+        }
+    };
+});
+</pre>
+    </div>
+
+
+    <div id="mojito-7" class="step" data-x="38300" data-y="1000" data-rotate-x="90" data-rotate-z="270" data-scale="5">
+        <pre style="font-size:.8em;" class="prettyprint">
+// Fire up the server
+$ mojito start
+
+// View @ localhost:8666/@myMojit/index
+</pre>
+    </div>
+
+
+
+    <div id="mojito-end" class="step" data-x="38300" data-y="1000" data-rotate-x="0" data-rotate-z="270" data-scale="5">
+        <p>Mojito is great for cross-platform applications.</p>
+        <br />
+        <p>You get a consistent JavaScript runtime on both the client and the server.</p>
+        <br />
+        <p>Learn more...</p>
+        <div style="background-color:white; font-size:.8em; padding:10px; border-radius:30px;">
+            <p>☛ code: https://github.com/yahoo/mojito</p>
+            <p>☛ docs: http://yhoo.it/mojdoc</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="yql" class="step" data-x="50000" data-y="5000" data-rotate="180" data-scale="5">
+        <h1 style="font-weight:bold;">Yahoo Query Language</h1>
+        <img style="text-align:right" src="./assets/yql2.png" height="400">
+    </div>
+
+    <div id="yql-2" class="step" data-x="45000" data-y="5000" data-rotate="180" data-scale="5" style="text-align:center">
+        <p>YQL is SQL-like syntax for HTTP.</p>
+        <br />
+        <div style="font-weight:bold;">
+            <p>SELECT {<span style="color:red">fields</span>}</p>
+            <p>FROM {<span style="color:blue">table</span>}</p>
+            <p>WHERE {<span style="color:green">condition</span>}</p>
+        </div>
+    </div>
+
+    <div id="yql-3" class="step" data-x="45000" data-y="5000" data-rotate="180" data-rotate-x="90" data-scale="5">
+        <h1>Examples</h1>
+        <pre class="prettyprint">SELECT * FROM weather.forecast WHERE location=90210</pre>
+    </div>
+
+    <div id="yql-4" class="step" data-x="45000" data-y="5000" data-z="-2000" data-rotate="180" data-rotate-x="90" data-scale="5">
+        <pre class="prettyprint">SELECT * FROM data.html.cssselect WHERE url="http://yahoo.com" AND css="body a"</pre>
+    </div>
+
+    <div id="yql-5" class="step" data-x="45000" data-y="5000" data-z="-4000" data-rotate="180" data-rotate-x="90" data-scale="5">
+        <pre class="prettyprint">SELECT * FROM google.translate WHERE q="Hello" AND target="cs";</pre>
+    </div>
+
+    <div id="yql-6" class="step" data-x="45000" data-y="5000" data-z="-7000" data-rotate="180" data-rotate-x="90" data-scale="5">
+        <p>Libraries available in most languages</p>
+        <p>In Node.js...</p>
+        <pre style="font-size:.6em" class="prettyprint">$ npm install -g yql</pre>
+        <p>In YUI...</p>
+        <pre style="font-size:.6em" class="prettyprint">
+YUI().use('yql', function(Y) {
+    Y.YQL('SELECT * FROM weather.forecast WHERE location=90210', function(result) {
+        // Do something
+    });
+});</pre>
+    </div>
+
+    <div id="yql-7" class="step" data-x="45000" data-y="-4000" data-z="-10000" data-rotate="180" data-scale="5">
+        <h1>What's the secret sauce?  <span style="font-weight:bold; color:#CC3333;">DataTables</span></h1>
+        <br />
+        <p><span style="font-weight:bold; color:#CC3333;">DataTables</span> convert <span style="font-weight:bold; color:#0066CC;">YQL</span> queries into one (or many) <span style="font-weight:bold; color:#336633;">HTTP requests</span>.</p>
+        <br />
+        <p><span style="font-weight:bold; color:#CC3333;">DataTables</span> available for 184 web sites &amp; services. 1,000+ tables in all.</p>
+        <br />
+        <p>Process data on YQL's servers. Win!</p>
+    </div>
+
+    <div id="yql-8" class="step" data-x="45000" data-y="-10000" data-z="-10000" data-rotate="180" data-scale="5">
+        <p>In short, YQL is ridiculously awesome.</p>
+        <br />
+        <p>More @ <a href="http://developer.yahoo.com/yql/">developer.yahoo.com/yql/</a></p>
+    </div>
+
+    <div id="conclusion" class="step" data-x="45000" data-y="18000" data-rotate="0" data-scale="5">
+        <h1>Conclusion?</h1>
+        <br />
+        <p> Go build awesome things, and use all the same tools we use.</p>
+        <br />
+        <p style="text-align:center;"><img src="./assets/yahoo-logo.png" height="45" style="position:relative; top:10px;"> <span style="color:red;">♥</span>'s open-source.</p>
+    </div>
+
+    <div id="links" class="step" data-x="45000" data-y="25000" data-rotate="0" data-scale="5">
+        <h1>Thanks!</h1>
+        <br />
+        <p><a href="http://yuilibrary.com">yuilibrary.com</a></p>
+        <p><a href="http://developer.yahoo.com/cocktails/mojito/">developer.yahoo.com/cocktails/mojito/</a></p>
+        <p><a href="http://developer.yahoo.com/yql/">developer.yahoo.com/yql/</a></p>
+        <p><a href="http://derek.io/">This presentation</a></p>
+        <br />
+        <p>Holla! <a href="http://twitter.com/derek">@derek</a></p>
     </div>
 
 <!--     <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
@@ -504,6 +693,9 @@ if ("ontouchstart" in document.documentElement) {
     is used in event handlers.
     
 -->
+
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
 </body>
 </html>

@@ -282,8 +282,9 @@ a:focus {
 }
 
 
-#abouttalk, #aboutme h1 {
-    font-size: 100px;
+h1 {
+    font-weight:bold;
+    font-size: 1.2em;
 }
 
 
@@ -666,6 +667,12 @@ a:focus {
     -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
     transition:         opacity 1s 5s,         transform 0.5s 4.5s;
 }
+
+
+body {
+    color:#333300;
+}
+
 
 /*
     And as the last thing there is a workaround for quite strange bug.
